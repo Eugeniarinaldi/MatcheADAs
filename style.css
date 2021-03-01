@@ -1,0 +1,87 @@
+body{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("imagenes.img/new-york-new-york-1199734-1600x1200.jpg");
+}
+
+.titulo{
+    
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin-bottom: 1.1%;
+}
+
+.panel-info{
+    height: 40px;
+    width: 470px;
+    display: flex;
+    /*justify-content: center;*/
+    border: black solid;
+    align-self: center;
+    align-items: center;
+    margin-bottom: 1%;
+    background-color: #F2EFE9;
+    border-radius: 15px;
+
+}
+
+.info{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1%;
+}
+.combo, .puntos{
+    padding-right: 10%;
+}
+
+.botones{
+    margin-left: 54%;
+}
+.juego{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.grilla{
+    background-color:#F2EFE9;
+    height: 30rem;
+    width: 29.375rem;
+    align-self: center;
+    opacity: 0.8;
+    border-radius: 15px;
+    border: solid black;
+}
+.tiempo{
+    height: 2rem;
+    width: 6rem;
+    align-self: center;
+    margin-top: 0.6%;
+    border: solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2EFE9;
+    border-radius: 15px;
+}
+
+.ayuda, .reiniciar{
+    background-color: #F2EFE9;
+    border-style: none;
+    font-size: 1.5rem;
+}
+.reiniciar:hover .fa-undo{
+    transform: rotate(-180deg);
+    cursor: pointer;
+}
+.ayuda:hover{
+    cursor: pointer;
+}
+
