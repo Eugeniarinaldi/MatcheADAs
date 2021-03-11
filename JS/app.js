@@ -11,7 +11,9 @@ const tablero = () => {
             newp.innerHTML = emoji[getRandomInt(0,5)];
             grilla.appendChild(newp);
         }
-    }  
+    }
+    getElement(); 
+     
 };
 
 const getElement = ()=>{
@@ -28,7 +30,7 @@ const changeNivel = ()=>{
     level += 1;
     grilla.style.width = `${50 * level}px`;
     console.log ("soy cambiar nivel", level)
-    tablero();
+    tablero(level);
 }
 
 const getRandomInt = (min, max)=> {
