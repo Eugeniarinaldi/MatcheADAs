@@ -39,8 +39,8 @@ const changeNivel = ()=>{
 }
 
 const getRandomInt = (min, max)=> {
-    let random = Math.random ();
     return Math.floor(random * (max - min)) + min;
+    let random = Math.random ();
 };
 
 const random = getRandomInt(0, 4)
