@@ -4,7 +4,9 @@ body{
     box-sizing: border-box;
     background-color: gray;
     font-family: 'Montserrat', sans-serif;
+
     background-image: url("Img/new-york-new-york-1199734-1600x1200.jpg");
+
 }
 
 .titulo{
@@ -50,15 +52,7 @@ body{
    
 }
 
-.grilla{
-    background-color:#F2EFE9;
-    height: 30rem;
-    width: 29.375rem;
-    align-self: center;
-    opacity: 0.8;
-    border-radius: 15px;
-    border: solid black;
-}
+
 .tiempo{
     height: 2rem;
     width: 6rem;
@@ -85,3 +79,26 @@ body{
     cursor: pointer;
 }
 
+/* Grilla */ 
+
+.grilla{
+    background-color:#F2EFE9;
+    /*height: 30rem;
+    width: 29.375rem;*/
+    align-self: center;
+    opacity: 0.8;
+    border-radius: 15px;
+    border: solid black;
+}
+
+.grilla{
+    display: flex;
+    width: 530px;
+    height: 500px;
+    flex-wrap: wrap;
+}
+p{
+    font-size: 50px;
+    margin: 2px;
+    
+}
