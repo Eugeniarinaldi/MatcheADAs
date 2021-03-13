@@ -91,12 +91,12 @@ body{
 
 .grilla{
     display: flex;
-    width: 530px;
+    width: 520px;
     height: 500px;
     flex-wrap: wrap;
 }
 p{
-    font-size: 50px;
-    margin: 2px;
+    font-size: 45px;
+    margin: 3px;
     
 }

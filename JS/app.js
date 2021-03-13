@@ -2,6 +2,9 @@ const emoji = ['🔞', '🎲', '🎰','🎯','🍸'];
 const grilla = document.getElementById("grilla")
 let level = 7;
 
+
+/* GRILLA */
+
 const tablero = () => {
     grilla.innerHTML = "";
     for(let i = 0; i < level; i++){
@@ -10,6 +13,8 @@ const tablero = () => {
             newp.setAttribute("id", `${i}-${j}`);
             newp.innerHTML = emoji[getRandomInt(0,5)];
             grilla.appendChild(newp);
+            grilla.style.width = `${(70)* level}px`;
+            grilla.style.height = 'auto';
         }
     }
     getElement(); 
@@ -18,7 +23,7 @@ const tablero = () => {
 
 const getElement = ()=>{
     const elem = document.getElementsByTagName("p")
-    console.log(elem);
+    /*console.log(elem);*/
     for(let i = 0; i< elem.length; i++){
         elem[i].addEventListener("click",(elem)=>{
             console.log(elem);
@@ -34,7 +39,7 @@ const changeNivel = ()=>{
 }
 
 const getRandomInt = (min, max)=> {
-    let random = Math.random (); 
+    let random = Math.random ();
     return Math.floor(random * (max - min)) + min;
 };
 
