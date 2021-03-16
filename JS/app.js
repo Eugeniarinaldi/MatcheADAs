@@ -50,3 +50,6 @@ const obtenerEmoji = console.log(`posicion: ${random}`, emoji[random]);
 /*getRandomInt(0, 4);*/
 
 tablero();
+
+
+
