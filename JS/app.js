@@ -2,6 +2,7 @@ const emoji = ['🔞', '🎲', '🎰','🎯','🍸'];
 const grilla = document.getElementById("grilla")
 let level = 7;
 
+
 /********************************************* */
 /****************** MODALES  **************** */
 /******************************************* */
@@ -64,7 +65,6 @@ const nivel = () =>{
 /********************* GRILLA ******************* */
 /*********************************************** */
 
-
 const tablero = () => {
     grilla.innerHTML = "";
     for(let i = 0; i < level; i++){
@@ -111,5 +111,4 @@ const obtenerEmoji = console.log(`posicion: ${random}`, emoji[random]);
 /*getRandomInt(0, 4);*/
 
 tablero();
-
 
