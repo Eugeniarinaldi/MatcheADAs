@@ -10,17 +10,31 @@ let level = 7;
 const Bienvenidos = () =>{
   swal({
       title: "¡Bienvenidos!",
-      text: `En MatcheADAs tu objetivo es juntar tres o más ítems del mismo tipo, ya sea en fila o columna. Para eso, selecciona un ítem y a continuación un ítem adyacente para intercambiarlos de lugar.  Si se forma un grupo, esos ítems se eliminarán y ganarás puntos. ¡Sigue armando grupos de 3 o más antes de que se acabe el tiempo!"
+      text: `En MatcheADAs tu objetivo es juntar tres o más ítems del mismo tipo, ya sea en fila o columna. Para eso, selecciona un ítem y a continuación un ítem adyacente para intercambiarlos de lugar.  
+      
+      Si se forma un grupo, esos ítems se eliminarán y ganarás puntos. ¡Sigue armando grupos de 3 o más antes de que se acabe el tiempo! 
+      
       Controles
-      Click izquierdo:
+
+      Click izquierdo: selección
       Enter o Espacio: selección
       Flechas o WASD: movimiento e intercambio
       `,
       button: "A Jugar!",
   })
-  .then(nivel)
-};
+  
+.then((X) => {
+  if (callModal) {
+      seleccionNivel();
+    return callModal = false;
+  } else if (!callModal){
+   timer()
+  }
+});
 
+};
+let callModal = true;
+window.onload = Bienvenidos();
 
 /* MODAL NUEVO JUEGO */
 

@@ -93,12 +93,21 @@ body{
 
 .grilla{
     display: flex;
-    width: 520px;
+    width: 540px;
     height: 500px;
     flex-wrap: wrap;
 }
 p{
-    font-size: 45px;
-    margin: 3px;
-    
+    font-size: 42px;
+    margin: 6px;
+}
+p:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgb(160, 182, 214);
+    border-radius: 5px;
+}
+
+.swal-text{
+    color: black;
+    text-align: center;
 }
