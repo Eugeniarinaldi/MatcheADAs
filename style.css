@@ -104,3 +104,8 @@ p:hover{
     box-shadow: 2px 2px 2px 2px rgb(160, 182, 214);
     border-radius: 5px;
 }
+
+.swal-text{
+    color: black;
+    text-align: center;
+}
