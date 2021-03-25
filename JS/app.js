@@ -1,6 +1,6 @@
 const emoji = ['🔞', '🎲', '🎰','🎯','🍸'];
 const grilla = document.getElementById("grilla")
-let level = 7;
+let level 
 
 
 /********************************************* */
@@ -25,7 +25,7 @@ const Bienvenidos = () =>{
   
 .then((X) => {
   if (callModal) {
-      seleccionNivel();
+      nivel();
     return callModal = false;
   } else if (!callModal){
    timer()
@@ -60,17 +60,52 @@ const nivel = () =>{
   switch (value) {
  
       case "facil":
-        tablero(9);
+        level = 9;
+        tablero (level)
         break;
    
       case "medio":
-        tablero (8);
+        level = 8;
+        tablero (level)
         break;
       case "dificil":
-        tablero (7);
+        level = 7 ;
+        tablero (level)
         break;
       }
   });
+  playTimer()
+}
+
+
+/* TIMER */
+
+const tiempoJuego = document.getElementById("tiempoJuego")
+let cont = 0;
+let process;
+let timer = 30;
+
+
+const playTimer = () => {
+  clearInterval(process);
+  tiempoJuego.innerHTML = 0
+  cont = timer;
+  process = setInterval(() => {
+   if (cont > 0){
+     cont--;
+     tiempoJuego.innerHTML = cont;
+   } else {
+     finJuego() 
+    }
+   }, 1000);
+};
+
+const finJuego = () => {
+  swal("Juego terminado!", "Puntaje final: 0 ",{
+    buttons: ["Nuevo Juego", "Reiniciar"],
+  });
+  clearInterval(process)
+  playTimer();
 }
 
 
@@ -79,7 +114,7 @@ const nivel = () =>{
 /********************* GRILLA ******************* */
 /*********************************************** */
 
-const tablero = () => {
+const tablero = (level) => {
     grilla.innerHTML = "";
     for(let i = 0; i < level; i++){
         for(let j = 0; j < level; j++){
@@ -122,7 +157,4 @@ const random = getRandomInt(0, 4)
 
 const obtenerEmoji = console.log(`posicion: ${random}`, emoji[random]);
 
-/*getRandomInt(0, 4);*/
-
 tablero();
-
