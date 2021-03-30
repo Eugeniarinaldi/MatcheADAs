@@ -8,6 +8,6 @@
 
 ### Así debería verse el Candy Crush en Las Vegas
 
-![imagen](./img/MatceadasInVegas.png)
+![imagen](./Img/MatcheadasInVegas.png)
 
 ### Gracias a mis profes y compañeras por el apoyo siempre
