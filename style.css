@@ -14,13 +14,13 @@ body{
     display: flex;
     justify-content: center;
     font-family: 'Pacifico', cursive;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 1.1%;
 }
 
 .panel-info{
     height: 40px;
-    width: 470px;
+    width: 480px;
     display: flex;
     /*justify-content: center;*/
     border: black solid;
@@ -99,7 +99,7 @@ body{
 }
 p{
     font-size: 42px;
-    margin: 6px;
+    margin: 5px;
 }
 p:hover{
     cursor: pointer;
