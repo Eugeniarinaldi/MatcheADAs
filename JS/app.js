@@ -109,6 +109,29 @@ const finJuego = () => {
 }
 
 
+/*const reinicio = () => {
+  swal("Reiniciar juego?", "Perderás el puntaje acumulado!",{
+    buttons: {
+      Cancelar:{
+        text: 'cancelar',
+        value: 'cancelar',
+      }, 
+      NuevoJuego:{
+        text: 'Nuevo juego',
+        value: 'nuevo',
+      },
+    }
+}) 
+
+.then((value) => {
+  switch (value) {
+      case "nuevo":
+        nivel ()
+        break;
+  }
+})
+*/
+
 
 /************************************************* */
 /********************* GRILLA ******************* */
@@ -156,5 +179,4 @@ const getRandomInt = (min, max)=> {
 const random = getRandomInt(0, 4)
 
 const obtenerEmoji = console.log(`posicion: ${random}`, emoji[random]);
-
 tablero();
